@@ -26,7 +26,7 @@ import {
 import { ResilientImage } from './ResilientImage';
 import { FloralCornerCluster } from './FloralDecor';
 
-const STORAGE_KEY = 'alesha_rafi_wedding_wishes_v1';
+const STORAGE_KEY = 'alesha_rafi_wedding_wishes_v2';
 
 interface RsvpAndFooterSectionProps {
   guestName: string;
@@ -61,6 +61,8 @@ export function RsvpAndFooterSection({ guestName }: RsvpAndFooterSectionProps) {
 
   useEffect(() => {
     try {
+      localStorage.removeItem('alesha_rafi_wedding_wishes_v1');
+      localStorage.removeItem('anita_olga_wedding_wishes_v1');
       localStorage.setItem(STORAGE_KEY, JSON.stringify(wishes));
     } catch {
       // Ignore storage quota issues
@@ -387,7 +389,12 @@ export function RsvpAndFooterSection({ guestName }: RsvpAndFooterSectionProps) {
 
         {/* Wishes Feed */}
         <div className="space-y-3.5 pt-2">
-          {wishes.map((wish) => {
+          {wishes.length === 0 ? (
+            <div className="rounded-xl bg-white/10 border border-white/25 p-6 text-center text-xs sm:text-sm text-white/90">
+              Belum ada ucapan. Jadilah yang pertama mengirimkan doa &amp; konfirmasi kehadiran!
+            </div>
+          ) : (
+            wishes.map((wish) => {
             const isAttending = wish.status === 'Hadir';
             const isDeclined = wish.status === 'Tidak Hadir';
             return (
@@ -513,7 +520,8 @@ export function RsvpAndFooterSection({ guestName }: RsvpAndFooterSectionProps) {
                 )}
               </article>
             );
-          })}
+          })
+          )}
         </div>
       </section>
 

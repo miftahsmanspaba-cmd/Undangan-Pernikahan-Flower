@@ -94,8 +94,8 @@ export const WEDDING_EVENTS: WeddingEvent[] = [
     year: '2026',
     time: '08.00 WIB',
     venueTitle: 'KEDIAMAN MEMPELAI WANITA',
-    address: 'Jepang, Harjosari Kidul',
-    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Jepang,+Harjosari+Kidul',
+    address: 'Tokyo, Jepang',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Tokyo,+Jepang',
     image: WEDDING_PHOTOS.floralStudio,
     sidebarSide: 'left',
   },
@@ -108,8 +108,8 @@ export const WEDDING_EVENTS: WeddingEvent[] = [
     year: '2026',
     time: '09.00 - Selesai',
     venueTitle: 'KEDIAMAN MEMPELAI WANITA',
-    address: 'Jepang, Harjosari Kidul',
-    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Jepang,+Harjosari+Kidul',
+    address: 'Tokyo, Jepang',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Tokyo,+Jepang',
     image: WEDDING_PHOTOS.cover,
     sidebarSide: 'right',
   },
@@ -122,8 +122,8 @@ export const WEDDING_EVENTS: WeddingEvent[] = [
     year: '2026',
     time: '17.00 WIB - Selesai',
     venueTitle: 'KEDIAMAN MEMPELAI PRIA',
-    address: 'Jepang, Harjosari Kidul',
-    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Jepang,+Harjosari+Kidul',
+    address: 'Tokyo, Jepang',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Tokyo,+Jepang',
     image: WEDDING_PHOTOS.windowPampas,
     sidebarSide: 'left',
   },
@@ -153,7 +153,7 @@ export const GIFT_ACCOUNTS = [
 export const GIFT_SHIPPING = {
   recipient: 'Alesha & Rafi',
   phone: '',
-  address: 'Jepang, Harjosari Kidul',
+  address: 'Tokyo, Jepang',
 };
 
 export const GALLERY_ITEMS: GalleryItem[] = [
@@ -235,43 +235,20 @@ export const LOVE_STORY: StoryChapter[] = [
 ];
 
 export const TURUT_MENGUNDANG = [
-  'Ibu Sri Wahyuni Anindita',
-  'Bapak Abdul Karim Syahputra, S.H.',
-  'Keluarga Besar Ibu Lina Marlina Putri',
-  'Bapak Bambang Santoso Prabowo, M.T.',
-  'Ibu Nurhayati Kusumawardani',
-  'Bapak Andi Pratama Nugroho',
-  'Ibu Nuraeni Fitriani, S.Pd.I.',
-  'Keluarga Besar Bapak Hasan Basri Syamsuddin',
-  'Bapak Mulyono Widjaja, M.M.',
-  'Ibu Aminah Zulkarnain, S.Ag.',
-  'Keluarga Besar Ibu Maryam Azzahra',
+  'Keluarga Besar Uzumaki (Naruto & Hinata)',
+  'Keluarga Besar Namikaze (Minato & Kushina)',
+  'Keluarga Besar Uchiha (Sasuke & Sakura)',
+  'Keluarga Besar Nara (Shikamaru & Temari)',
+  'Keluarga Besar Yamanaka (Ino & Sai)',
+  'Keluarga Besar Hyuga (Hiashi & Hanabi)',
+  'Keluarga Besar Hatake (Kakashi)',
+  'Keluarga Besar Senju (Tsunade)',
+  'Keluarga Besar Akimichi (Choji & Karui)',
+  'Keluarga Besar Sarutobi (Konohamaru)',
+  'Keluarga Besar Desa Konohagakure',
 ];
 
-export const INITIAL_WISHES: WishEntry[] = [
-  {
-    id: 'wish-1',
-    name: 'Ninda',
-    status: 'Hadir',
-    message:
-      'MasyaAllah akhirnyaaa ya wak elmaakkuu, lancar lancar sampai hari H ya wak menjadi keluarga yang sakinah mawaddah dan warahmahh Aaaminn 🙏🙏',
-    dateLabel: '19 November 2026',
-    relativeLabel: '1 minggu yang lalu',
-    likes: 89,
-    replies: [],
-  },
-  {
-    id: 'wish-2',
-    name: 'Yanti & Suami',
-    status: 'Tidak Hadir',
-    message:
-      'Selamat menempuh hidup baru kakak 😘 ..Semoga menjadi keluarga yang sakinah mawaddah warahmah. Smoga segera diberi momongan yang soleh dan solehah. Aamiin Yaa Allah 💕',
-    dateLabel: '19 November 2026',
-    relativeLabel: '1 minggu yang lalu',
-    likes: 92,
-    replies: [],
-  },
-];
+export const INITIAL_WISHES: WishEntry[] = [];
 
 export const WEDDING_STICKERS = [
   { id: 's1', label: 'Selamat Menikah', icon: '💐' },

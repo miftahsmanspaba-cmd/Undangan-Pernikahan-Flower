@@ -148,7 +148,7 @@ export function EventsAndCountdown() {
 
   const handleSaveToCalendar = () => {
     const googleCalUrl =
-      'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Alesha+%26+Rafi&dates=20261230T010000Z/20261231T140000Z&details=Akad+Nikah+%26+Resepsi+Alesha+%26+Rafi&location=Jepang,+Harjosari+Kidul';
+      'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Alesha+%26+Rafi&dates=20261230T010000Z/20261231T140000Z&details=Akad+Nikah+%26+Resepsi+Alesha+%26+Rafi&location=Tokyo,+Jepang';
     const link = document.createElement('a');
     link.href = googleCalUrl;
     link.target = '_blank';
