@@ -74,7 +74,7 @@ export function GalleryAndStorySection() {
               key={item.id}
               type="button"
               onClick={() => setActiveLightboxIndex(idx)}
-              initial={{ opacity: 0, y: 16 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.5, delay: (idx % 3) * 0.06 }}
@@ -118,7 +118,7 @@ export function GalleryAndStorySection() {
           {LOVE_STORY.map((chapter, idx) => (
             <motion.article
               key={chapter.id}
-              initial={{ opacity: 0, y: 18 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.55, delay: idx * 0.08 }}

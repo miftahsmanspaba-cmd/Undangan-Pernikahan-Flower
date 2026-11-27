@@ -168,7 +168,7 @@ export function RsvpAndFooterSection({ guestName }: RsvpAndFooterSectionProps) {
         <FloralCornerCluster position="top-right" />
         {/* Doa Card */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.5 }}
@@ -198,7 +198,7 @@ export function RsvpAndFooterSection({ guestName }: RsvpAndFooterSectionProps) {
 
         {/* Turut Mengundang Card */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.06 }}

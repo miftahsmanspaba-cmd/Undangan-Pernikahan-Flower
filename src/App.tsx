@@ -27,18 +27,6 @@ export default function App() {
   const [customGuestInput, setCustomGuestInput] = useState('');
   const [copiedGuestUrl, setCopiedGuestUrl] = useState(false);
 
-  // Lock body scroll while cover overlay is closed
-  useEffect(() => {
-    if (!isOpened) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpened]);
-
   // Clean up audio on unmount
   useEffect(() => {
     return () => {

@@ -40,7 +40,7 @@ function EventCard({ event, index }: { event: WeddingEvent; index: number }) {
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 20 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, delay: index * 0.08 }}
@@ -160,7 +160,7 @@ export function EventsAndCountdown() {
       <section className="relative bg-floral-slate text-white px-6 py-12 text-center overflow-hidden">
         <FloralCornerCluster position="bottom-right" />
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
@@ -238,7 +238,7 @@ export function EventsAndCountdown() {
 
         <div className="relative z-10 h-full flex items-center justify-center px-5">
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
+            initial={false}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}

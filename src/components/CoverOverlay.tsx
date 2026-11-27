@@ -25,7 +25,7 @@ export function CoverOverlay({
             y: '-100%',
             transition: { duration: 0.75, ease: [0.16, 1, 0.3, 1] },
           }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#4D688A] overflow-hidden"
+          className="fixed inset-0 z-50 h-[100dvh] w-full flex items-center justify-center bg-[#4D688A] overflow-hidden"
         >
           {/* Full-bleed atmospheric backdrop on desktop, direct full-screen on mobile */}
           <div className="relative w-full h-full max-w-[520px] lg:max-w-[560px] mx-auto overflow-hidden shadow-2xl">
@@ -46,12 +46,7 @@ export function CoverOverlay({
 
             {/* Cover content */}
             <div className="relative z-10 h-full flex flex-col justify-end px-7 pb-10 sm:px-10 sm:pb-14 text-white">
-              <motion.div
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="space-y-4"
-              >
+              <div className="space-y-4">
                 <p className="text-xs sm:text-sm tracking-[0.22em] font-medium uppercase text-white/90">
                   THE WEDDING OF
                 </p>
@@ -88,7 +83,7 @@ export function CoverOverlay({
                 <p className="text-[11px] italic text-white/75 pt-2">
                   *Mohon maaf apabila ada kesalahan penulisan nama/gelar
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
 

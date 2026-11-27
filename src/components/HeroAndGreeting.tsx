@@ -31,7 +31,7 @@ export function HeroAndGreeting() {
 
         <div className="relative z-10 h-full flex flex-col items-center justify-end pb-12 px-6 text-center text-white">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -83,7 +83,7 @@ export function HeroAndGreeting() {
 
         {/* Monogram A | R */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={false}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
@@ -122,7 +122,7 @@ export function HeroAndGreeting() {
           ].map((photo, idx) => (
             <motion.div
               key={photo.alt}
-              initial={{ opacity: 0, y: 14 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
@@ -139,7 +139,7 @@ export function HeroAndGreeting() {
 
         {/* Arabic Salam & Intro */}
         <motion.div
-          initial={{ opacity: 0, y: 14 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}

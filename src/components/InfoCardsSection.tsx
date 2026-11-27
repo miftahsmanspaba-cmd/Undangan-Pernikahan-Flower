@@ -61,7 +61,7 @@ export function InfoCardsSection() {
       <FloralCornerCluster position="bottom-right" />
       {/* Dress Code Card */}
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.5 }}
@@ -108,7 +108,7 @@ export function InfoCardsSection() {
 
       {/* Live Streaming Card */}
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.5, delay: 0.06 }}
@@ -147,7 +147,7 @@ export function InfoCardsSection() {
 
       {/* Wedding Gift Card */}
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.5, delay: 0.12 }}
