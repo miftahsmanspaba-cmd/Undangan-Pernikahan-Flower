@@ -1,0 +1,6 @@
+{
+  "name": "The Wedding of Anita & Olga",
+  "description": "Undangan pernikahan digital Anita Safitri, S.Pd. & Olga Kuswoyo, S.T. — 31 Desember 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
