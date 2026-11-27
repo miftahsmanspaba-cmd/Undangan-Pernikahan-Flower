@@ -1,3 +1,10 @@
+import coverImg from '../assets/images/cartoon_cover_floral_1795743752337.jpg';
+import heroDanceImg from '../assets/images/cartoon_hero_dance_floral_1795743753198.jpg';
+import brideImg from '../assets/images/cartoon_bride_anita_floral_1795743753427.jpg';
+import groomImg from '../assets/images/cartoon_groom_olga_floral_1795743753417.jpg';
+import floralStudioImg from '../assets/images/cartoon_floral_arch_couple_1795743754577.jpg';
+import windowPampasImg from '../assets/images/cartoon_window_garden_couple_1795743754560.jpg';
+
 export interface WeddingEvent {
   id: string;
   title: string;
@@ -51,12 +58,12 @@ export interface WishEntry {
 }
 
 export const WEDDING_PHOTOS = {
-  cover: '/src/assets/images/cartoon_cover_floral_1795743752337.jpg',
-  heroDance: '/src/assets/images/cartoon_hero_dance_floral_1795743753198.jpg',
-  bride: '/src/assets/images/cartoon_bride_anita_floral_1795743753427.jpg',
-  groom: '/src/assets/images/cartoon_groom_olga_floral_1795743753417.jpg',
-  floralStudio: '/src/assets/images/cartoon_floral_arch_couple_1795743754577.jpg',
-  windowPampas: '/src/assets/images/cartoon_window_garden_couple_1795743754560.jpg',
+  cover: coverImg,
+  heroDance: heroDanceImg,
+  bride: brideImg,
+  groom: groomImg,
+  floralStudio: floralStudioImg,
+  windowPampas: windowPampasImg,
 };
 
 export const COUPLE_INFO = {
