@@ -8,12 +8,14 @@ import { FloralCornerCluster } from './FloralDecor';
 function AnimatedDayNumber({ target }: { target: number }) {
   const ref = useRef<HTMLSpanElement | null>(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
-  const [displayValue, setDisplayValue] = useState(1);
+  const [displayValue, setDisplayValue] = useState(target);
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || hasAnimated.current) return;
+    hasAnimated.current = true;
     let frame = 0;
-    const totalFrames = 24;
+    const totalFrames = 18;
     const interval = window.setInterval(() => {
       frame += 1;
       const progress = frame / totalFrames;
@@ -24,7 +26,7 @@ function AnimatedDayNumber({ target }: { target: number }) {
         setDisplayValue(target);
         window.clearInterval(interval);
       }
-    }, 28);
+    }, 24);
     return () => window.clearInterval(interval);
   }, [isInView, target]);
 

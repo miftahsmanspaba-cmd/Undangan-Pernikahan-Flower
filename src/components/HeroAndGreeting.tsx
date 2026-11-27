@@ -87,20 +87,14 @@ export function HeroAndGreeting() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center justify-center gap-4 mb-9"
+          className="flex items-center justify-center gap-5 mb-9"
         >
           <span className="font-serif text-6xl sm:text-7xl font-light tracking-tight leading-none">
             A
           </span>
           <span className="w-[1.5px] h-16 bg-white/80" aria-hidden="true" />
-          <span className="relative font-serif text-6xl sm:text-7xl font-light tracking-tight leading-none flex items-center">
+          <span className="font-serif text-6xl sm:text-7xl font-light tracking-tight leading-none">
             R
-            <span
-              className="absolute inset-0 flex items-center justify-center text-3xl italic font-serif opacity-80 translate-x-3"
-              aria-hidden="true"
-            >
-              &amp;
-            </span>
           </span>
         </motion.div>
 
