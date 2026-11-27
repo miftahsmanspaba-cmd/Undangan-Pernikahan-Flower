@@ -70,7 +70,7 @@ export const COUPLE_INFO = {
   hashtag: '#ALESHAnRAFItogether',
   dateDisplay: '31 . 12 . 2026',
   targetIsoDate: '2026-12-31T08:00:00+07:00',
-  songTitle: 'Yung Kai - Blue',
+  songTitle: 'Yovie & Nuno - Janji Suci',
   bride: {
     fullName: 'Alesha',
     shortName: 'Alesha',
